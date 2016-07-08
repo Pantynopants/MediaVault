@@ -1,0 +1,23 @@
+.marketing{
+	height: 90%;
+	background: url(../images/upload.jpg);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.marketing .col-lg-4 {
+	height: 100%;
+  	margin-bottom: 20px;
+  	text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.dropzone{
+	height: 70%;
+	background: rgba(255,255,255,0.5)
+}

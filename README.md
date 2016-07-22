@@ -12,9 +12,11 @@ Design the DB -> create model class -> unit test model ->  implement DAO ->
 
 Create html -> change to jsp -> design service/servlet according to needed ->
 
-## Installation
-*Assuming that you are using eclipse*
-1. project -> R click -> add external jars. Then add jdom.jar/smartupload.jar/...,  which is in /WenContent/WEB-INF/lib , to it.
+## Installation  
+
+*Assuming that you are using eclipse*  
+
+1. project -> R click -> add external jars. Then add jdom.jar/smartupload.jar/...,  which is in /WenContent/WEB-INF/lib , to it.  
 
 2. maven update. If error occurred, delete local maven folder and retry.
 
@@ -38,7 +40,8 @@ Create html -> change to jsp -> design service/servlet according to needed ->
 - [Dropzone.js](http://www.dropzonejs.com/)
 - Jspsmart
 - Junit
-- [Coreservlets-JPA](http://www.coreservlets.com)  
+- [Coreservlets-JPA](http://www.coreservlets.com)
+
 ---
 Also thanks @Richard and @Ada   
 Feel free to filing an issue :)

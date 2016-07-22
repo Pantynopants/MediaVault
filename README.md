@@ -40,5 +40,5 @@ Create html -> change to jsp -> design service/servlet according to needed ->
 - Junit
 - [Coreservlets-JPA](http://www.coreservlets.com)  
 ---
-Also thanks @Ada   
-Feel free to put some issues.
+Also thanks @Richard and @Ada   
+Feel free to filing an issue :)

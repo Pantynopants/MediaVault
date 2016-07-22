@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>  
+    <web-app> 
+    <!--  
+    <listener>
+    	<listener-class>
+    	myapp.service.InitResourceListener
+    	</listener-class>
+    </listener>
+    -->
+    	<servlet>  
+            <servlet-name>InitResourceListener</servlet-name>  
+            <servlet-class>myapp.service.InitResourceListener</servlet-class>  
+            <load-on-startup>1</load-on-startup>
+        </servlet>  
+        <servlet-mapping>  
+            <servlet-name>InitResourceListener</servlet-name>  
+            <url-pattern>/InitResourceListener</url-pattern>  
+        </servlet-mapping>
+        
+        <servlet>  
+            <servlet-name>CreateAlbum</servlet-name>  
+            <servlet-class>myapp.coreservlets.CreateAlbum</servlet-class>  
+        </servlet>  
+        <servlet-mapping>  
+            <servlet-name>CreateAlbum</servlet-name>  
+            <url-pattern>/CreateAlbum</url-pattern>  
+        </servlet-mapping>
+        
+        <servlet>  
+            <servlet-name>CreateTrack</servlet-name>  
+            <servlet-class>myapp.coreservlets.CreateTrack</servlet-class>  
+        </servlet>  
+        <servlet-mapping>  
+            <servlet-name>CreateTrack</servlet-name>  
+            <url-pattern>/CreateTrack</url-pattern>  
+        </servlet-mapping>  
+        
+        <servlet>  
+            <servlet-name>addTrack</servlet-name>  
+            <servlet-class>myapp.coreservlets.addTrack</servlet-class>  
+        </servlet>  
+        <servlet-mapping>  
+            <servlet-name>addTrack</servlet-name>  
+            <url-pattern>/addTrack</url-pattern>  
+        </servlet-mapping>  
+          
+          <servlet>  
+            <servlet-name>UploadServlet</servlet-name>  
+            <servlet-class>myapp.coreservlets.UploadServlet</servlet-class>  
+        </servlet>  
+        <servlet-mapping>  
+            <servlet-name>UploadServlet</servlet-name>  
+            <url-pattern>/UploadServlet</url-pattern>  
+        </servlet-mapping>  
+        
+        <servlet>  
+            <servlet-name>writeInfo</servlet-name>  
+            <servlet-class>myapp.coreservlets.writeInfo</servlet-class>  
+        </servlet>  
+        <servlet-mapping>  
+            <servlet-name>writeInfo</servlet-name>  
+            <url-pattern>/writeInfo</url-pattern>  
+        </servlet-mapping> 
+        
+        <servlet>  
+            <servlet-name>writeTVshowInfo</servlet-name>  
+            <servlet-class>myapp.coreservlets.writeTVshowInfo</servlet-class>  
+        </servlet>  
+        <servlet-mapping>  
+            <servlet-name>writeTVshowInfo</servlet-name>  
+            <url-pattern>/writeTVshowInfo</url-pattern>  
+        </servlet-mapping> 
+       <!-- can work without these --> 
+        <servlet>  
+            <servlet-name>loadalbum</servlet-name>  
+            <servlet-class>myapp.service.LoadAlbumServlet</servlet-class>  
+        </servlet>  
+        <servlet-mapping>  
+            <servlet-name>loadalbum</servlet-name>  
+            <url-pattern>/loadalbum</url-pattern>  
+        </servlet-mapping>
+         
+        <servlet>  
+            <servlet-name>loadtrack</servlet-name>  
+            <servlet-class>myapp.service.LoadTracksServlet</servlet-class>  
+        </servlet>  
+        <servlet-mapping>  
+            <servlet-name>loadtrack</servlet-name>  
+            <url-pattern>/loadtrack</url-pattern>  
+        </servlet-mapping>
+        
+        <welcome-file-list>
+		    <welcome-file>index.jsp</welcome-file>
+		   <!-- <welcome-file>index.html</welcome-file>--> 
+  		</welcome-file-list>
+        
+    </web-app>  

@@ -326,11 +326,11 @@ select {
 	-moz-appearance: none;
 	-o-appearance: none;
 	-ms-appearance: none;
-	color: #9E9E9E;
+	color: #333131;
 	background: url(../images/arrow.png) no-repeat 95.5% 58% #fff;
 	outline: none;
 	border: none;
-	width: 95%;
+	width: 25%;
 	font-size: 14px;
 	font-weight: 400;
 	cursor: pointer;
@@ -1053,7 +1053,7 @@ ul.navig li a {
 }
 select {
 	padding: 6px 0px 6px 10px;
-	width: 99%;
+	width: 48%;
 }
 .banner-top {
 	/*padding: 1.8em 30px;*/

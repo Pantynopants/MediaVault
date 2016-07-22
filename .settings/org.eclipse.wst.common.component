@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="NEU">
+    <wb-module deploy-name="JPAHibernateSpike">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="NEU"/>
-        <property name="java-output-path" value="/NEU/build/classes"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <property name="context-root" value="JPAHibernateSpike"/>
+        <property name="java-output-path" value="/JPAHibernateSpike/target/JPAHibernateSpike-0.0.1-SNAPSHOT/WEB-INF/classes"/>
     </wb-module>
 </project-modules>

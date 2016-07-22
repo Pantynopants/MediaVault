@@ -1,9 +1,14 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@page import="java.util.ArrayList,org.jdom2.Document ,org.jdom2.Element,org.jdom2.JDOMException,org.jdom2.input.*,org.jdom2.*"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<%@ page import="java.io.*" %>
+<%@ page import="myapp.coreservlets.*" %>
 <!DOCTYPE html>
-<!--write by Leo 20144695-->
+
 <html>
 <head>
-<title>uplaod</title>
+<title>Creat New Album</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="NEU" />
@@ -31,111 +36,60 @@
         });
       });
     </script>
+<!--start-smoth-scrolling-->
 </head>
 <body>
-
- <div class="navbar-wrapper">
-      <div class="container">
-
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header" style="width:100%;">
-            <a class="navbar-brand" href="homepage.html">Media Vault</a>
-
-
-
-        <div class="header collapse navbar-collapse" id="example-navbar-collapse" style="width:100%;">
-
-          <div id="navbar">
-            <ul class="nav navbar-nav">
-              <li><a href="mainpage.html">Home</a></li>
-              <li><a href="music.html">Music</a></li>
-              <li><a href="display.html">Movie</a></li>
-              <li><a href="TVshow.html">TV Show</a></li>
-              <li class="active"><a href="upload.html">UpLoad</a></li>
-            </ul>
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-              <input class="form-control" name="s" id="s" type="search" results="s" class="text" placeholder="Search"/>
-              </div>
-
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">login</a></li>
-              <li><a href="#">signup&nbsp;&nbsp;</a></li>
-
-            </ul>
-          </div>
-        </div>
-
-          <button type="button" class="navbar-toggle" data-toggle="collapse"
-             data-target="#example-navbar-collapse">
-             <span class="sr-only">switch</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-          </button>
-       </div>
-
-    </nav>
-</div>
-    </div>
-      <div class="clearfix"></div>
-
-    <script>
-      $("span.menu").click(function(){
-        $(" ul.navig").slideToggle("slow" , function(){
-        });
-      });
-    </script>
-
+ <%@ include file="header.jsp"%>
     <div class="container marketing">
       <br>
       <br>
       <hr class="featurette-divider">
 
-      <form action="doUpload.jsp" method="post" enctype="multipart/form-data" class="dropzone dz-clickable">
-	      <div class="dz-default dz-message">
-	      	<span style="font-size:3em;">Drop files here to upload</span>
-	      </div>
+      <form action="UploadAlbum" method="post" class="dropzone dz-clickable" enctype="multipart/form-data">
+      Name of Album : <input type="text" name="album-name">
+      Artist:<input type="text" name="artist-name"><br>
+      Cover:<input type="file" name="album-cover">
+      Bio:<input type="text" name="album-introduction">
+      Genre of Album :
+                             <select id="idState" name="genre" selectedindex="$!{state}">
+                               <option value="POP">POP </option>
+                               <option value="Classical">Classical </option>
+                               <option value="Rap">Rap </option>
+                               <option value="Jazz">Jazz </option>
+                               <option value="Blues">Blues </option>
+                             </select>
+        <!-- submit button -->
+       <div class="creatnew2">
+	     <div  class="bnr-one">
+	         <div class="bnr-btn " style="float:right;">
+	            <!-- <form> -->
+	            <input type="submit"value="Submit">
+	             <!-- </form> -->
+	         </div>
+	         <div class="bnr-btn " style="float:right;">
+	             <!-- <form> -->
+	         <input type="submit" value="Reset">
+	            <!-- </form> -->
+	         </div>
+	    	</div>
+  		</div>
+
+  	 <!-- upload file -->
+      <div class="dz-default dz-message">
+      <div class="wordposition" style="font-size:3em;">
+      Drop Image here to upload</div>
+      </div>
+
       </form>
 
 
       <input type="file" multiple="multiple" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;">
 
+      <!-- <hr class="featurette-divider"> -->
+
+
     </div>
-
-
-
-    <footer class="footer">
-      <div class="container">
-        <div class="col-md-4" style="color:white;text-align: center;">
-          <p style="font-size:1.5em;">CONTACT</p><br>
-          <address>
-            Written by <a href="mailto:webmaster@example.com">Leo &amp; Ada</a>.<br>
-            NEU,
-            CHINA
-          </address>
-        </div>
-        <div class="col-md-4" style="color:white;text-align: center;" >
-          <p style="font-size:1.5em;">RESOURCES</p>
-          <br>
-          <ul>
-                <a href="http://www.github.com" style="text-align: center;" >github</a>
-                <br>
-                <a href="http://www.w3school.com.cn" style=" text-align: center;" >W3School</a>
-          </ul>
-        </div>
-        <div class="col-md-4" style="color:white;text-align: center;" >
-          <p style="font-size:1.5em;">LINK</p><br>
-          <ul>
-                <a href="http://www.bilibili.com" style="text-align: center;" >bilibili</a>
-                <br>
-                <a href="http://www.acfun.tv" style="text-align: center;" >acfun</a>
-          </ul>
-        </div>
-      </div>
-    </footer>
+ <%@ include file="footer.jsp"%>
 
 </body>
 </html>
-

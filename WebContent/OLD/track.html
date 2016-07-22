@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>Track</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="./css/carousel.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/vendor/holder.min.js"></script>
+    <script LANGUAGE="JavaScript">
+<!--
+    function openwin() {
+     window.open ("./Revise.html", "newwindow", "height=500, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
+    }
+//-->
+    </script>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+   <div class="navbar-wrapper">
+      <div class="container">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- <div class="container"> -->
+        <div class="navbar-header" style="width:100%;">
+            <a class="navbar-brand" href="homepage.html">Media Vault</a>
+
+
+
+        <div class="header collapse navbar-collapse" id="example-navbar-collapse" style="width:100%;">
+
+          <div id="navbar">
+            <ul class="nav navbar-nav">
+              <li><a href="mainpage.html">Home</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="display.html">Movie</a></li>
+              <li><a href="TVshow.html">TV Show</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Upload <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./upload.html">Creat new Album</a></li>
+                  <li><a href="./upload3.html">Creat new TVShow</a></li>
+                  <li><a href="./upload4.html">Upload Music</a></li>
+                  <li><a href="./upload2.html">Upload TVShow</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+              <input class="form-control" name="s" id="s" type="search" results="s" class="text" placeholder="Search"/>
+              <!-- <input type="search" class="form-control" > -->
+              </div>
+              <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">login</a></li>
+              <li><a href="#">signup&nbsp;&nbsp;</a></li>
+              <!-- <li><a href="#">Link</a></li> -->
+            </ul>
+          </div>
+        </div>
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+             data-target="#example-navbar-collapse">
+             <span class="sr-only">switch</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+          </button>
+       </div>
+
+    </nav>
+</div>
+    </div>
+      <div class="clearfix"></div>
+  <!-- </div>
+  </div> -->
+  <!-- script-for-menu -->
+  <!-- script-for-menu -->
+    <script>
+      $("span.menu").click(function(){
+        $(" ul.navig").slideToggle("slow" , function(){
+        });
+      });
+    </script>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+
+        <div class="col-md-7 col-md-push-5">
+            <div class="changeinfo">
+      <div  class="bnr-one">
+           <div class="bnr-btn " style="float:right;">
+                  <!-- <form> -->
+                 <input type="submit" value="Revise" onclick="openwin()">
+              <!--input type="submit"  value="Chang Infor"-->
+                 </div>
+                 <!-- </form> -->
+           </div>
+           </div>
+
+          <h2 class="featurette-heading">Maroon 5 </h2>
+          <p class="lead">Maroon 5 is a Grammy Award-winning American pop rock band. group comprises five members: Adam Levine (lead vocals, rhythm guitar), James Valentine (lead guitar, backing vocals), Jesse Carmichael (keyboards, rhythm guitar, backing vocals), Mickey Madden (bass guitar), and Matt Flynn (drums, percussion)..</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Animals</td>
+                <td>
+                    <audio src="http://123.206.9.230/NEU/music/Maroon 5 - Animals.mp3" controls="controls" ></audio>
+                </td>
+                <td>
+                    <form name="input" action="http://123.206.9.230/NEU/music/Maroon 5 - Animals.mp3" method="get">
+                        <div  class="bnr-one">
+                            <div class="bnr-btn " style="float:right;">
+                                <!-- <form> -->
+                                    <input type="submit" value="Addto List">
+                                <!-- </form> -->
+                            </div>
+                            <div class="bnr-btn " style="float:right;">
+                                <!-- <form> -->
+                                    <input type="submit" value="Download">
+                                <!-- </form> -->
+                            </div>
+                        </div>
+                    </form>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Sugar</td>
+                <td><audio src="http://123.206.9.230/NEU/music/Maroon 5 - Sugar.mp3" controls="controls" ></audio></td>
+                <td>
+                    <form name="input" action="http://123.206.9.230/NEU/music/Maroon 5 - Sugar.mp3" method="get">
+                        <div  class="bnr-one">
+                            <div class="bnr-btn " style="float:right;">
+                                <!-- <form> -->
+                                    <input type="submit"  value="Addto List">
+                                <!-- </form> -->
+                            </div>
+                            <div class="bnr-btn " style="float:right;">
+                                <!-- <form> -->
+                                    <input type="submit"  action="" value="Download">
+                                <!-- </form> -->
+                            </div>
+                        </div>
+                    </form>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Maps</td>
+                <td><audio src="http://123.206.9.230/NEU/music/Maroon 5 - Maps.mp3" controls="controls" ></audio></td>
+                <td>
+                    <form name="input" action="http://123.206.9.230/NEU/music/Maroon 5 - Maps.mp3" method="get">
+                        <div  class="bnr-one">
+                            <div class="bnr-btn " style="float:right;">
+                                <!-- <form> -->
+                                    <input type="submit"  value="Addto List">
+                                <!-- </form> -->
+                            </div>
+                            <div class="bnr-btn " style="float:right;">
+                                <!-- <form> -->
+                                    <input type="submit"  action="" value="Download">
+                                <!-- </form> -->
+                            </div>
+                        </div>
+                    </form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/400x400/auto" src="./images/music12.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+
+      </div>
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="col-md-4" style="color:white;text-align: center;">
+          <p style="font-size:1.5em;">CONTACT</p><br>
+          <address>
+            Written by <a href="mailto:neusc@foxmail.com">Leo &amp; Ada</a>.<br>
+            NEU,
+            CHINA
+          </address>
+        </div>
+        <div class="col-md-4" style="color:white;text-align: center;" >
+          <p style="font-size:1.5em;">RESOURCES</p>
+          <br>
+          <ul>
+                <a href="http://www.github.com" style="text-align: center;" >github</a>
+                <br>
+                <a href="http://www.w3school.com.cn" style=" text-align: center;" >W3School</a>
+          </ul>
+        </div>
+        <div class="col-md-4" style="color:white;text-align: center;" >
+          <p style="font-size:1.5em;">LINK</p><br>
+          <ul>
+                <a href="http://www.bilibili.com" style="text-align: center;" >bilibili</a>
+                <br>
+                <a href="http://www.acfun.tv" style="text-align: center;" >acfun</a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+</html>

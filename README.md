@@ -45,3 +45,6 @@ Create html -> change to jsp -> design service/servlet according to needed ->
 ---
 Also thanks @Richard and @Ada   
 Feel free to filing an issue :)
+
+---  
+[DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE](http://www.wtfpl.net/txt/copying/)

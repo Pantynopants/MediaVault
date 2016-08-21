@@ -41,6 +41,7 @@ Create html -> change to jsp -> design service/servlet according to needed ->
 - Jspsmart
 - Junit
 - [Coreservlets-JPA](http://www.coreservlets.com)
+- [dropdown](https://github.com/CWSpear/bootstrap-hover-dropdown)
 
 ---
 Also thanks @Richard and @Ada   
